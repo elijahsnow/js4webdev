@@ -1,0 +1,58 @@
+body {
+  color: #5E5E5E;
+  font-size: 1.2em;
+  margin-left: 2.5em;
+  margin-right: 1.5em;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #2FC0D2;
+  font-weight: 600;
+}
+
+h2, h3, h4, h5 {text-transform: uppercase;}
+
+p {
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.03px;
+  padding: 20px 40px 20px 0;
+}
+
+li {
+  line-height: 1.6;
+  padding-right: 1.6em;
+}
+
+a {
+  font-weight: 600;
+  font-size: 1.4em;
+  color: #87A9E4;
+  text-decoration: none;
+}
+
+.more-link {
+  display: block;
+  padding-top: 0.3em;
+}
+
+button {
+  background: #2FC0D2;
+  padding: 1.2em 1em;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 3px 3px 5px #888;
+}
+
+button:hover {
+  background: #87A9E4;
+}
+
+#time {
+  margin-top: 1.5em;
+  display: block;
+}
