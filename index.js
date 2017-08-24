@@ -29,11 +29,17 @@ for (var i = 0; i < array.length; i++) {
 
 // Formal description:
 // -  Move the top N-1  disk from the starting tower to the temporary tower.
-// -  Move tge bottom most (aka Nth) disk from starting tower to the destination tower
+// -  Move the bottom most (aka Nth) disk from starting tower to the destination tower
 // -  Move the remaining N-1 disks from the temporary tower to the destination tower.
 //    Recursion. Did you mean recursion.
 (function () {
 var numberOfDisks = 3;
+
+// Our function takes three variables
+// Where 'n' is the number of disks to be moved
+// Where 'a' is the starting tower
+// Where 'c' is our destination tower
+// Whre 'b' is our auxiliary or temporary tower
 
 var towerOfHanoi = function(n, a, b, c) {
   if (n > 0) {
@@ -45,3 +51,17 @@ var towerOfHanoi = function(n, a, b, c) {
 
 towerOfHanoi(numberOfDisks, "starting", "temporary", "destination");
 }());
+
+
+//  We've defined a function which will represent the moves required to moves
+//  required to move all the disks to the target rod.
+//              towerOfHanoi(n, from_rod, to_rod, aux_rod)
+//              where n   ==>  number of diks to be moved.
+//              where from_rod ==> rod where disk is present.
+//              where to_rod ==> rod where the dosk is to be moved.
+//              where  aux_rod ==> auxiliary/temporary moving rod.
+//
+//                  The corresponding function would be:
+//                  towerOfHanoi(4, A, B, C)
+//
+//  Now, we can devide our task into simpler subtasks
