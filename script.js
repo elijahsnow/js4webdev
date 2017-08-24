@@ -174,3 +174,15 @@ console.log(board);
     console.error("This is an error!");
   }
 }());
+
+(function () {
+  var numberOfDisks = 3;
+
+var hanoi = function(n, a, b, c) {
+  if (n > 0) {
+    hanoi(n - 1, a, c, b);
+    console.log("Move disk " + n + " from " + a + " to " + c + "!");
+    hanoi(n - 1, b, a, c);
+  }
+}
+}());
