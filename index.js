@@ -65,3 +65,15 @@ towerOfHanoi(numberOfDisks, "starting", "temporary", "destination");
 //                  towerOfHanoi(4, A, B, C)
 //
 //  Now, we can devide our task into simpler subtasks
+
+var defaultName = "JAVASCRIPT";
+
+function sayHello(name) {
+  if (name === undefined) {
+    console.log("Hello, " + defaultName + "!");
+  } else {
+    console.log("Hello, " + name + "!");
+  }
+}
+
+sayHello("Alejandro");
